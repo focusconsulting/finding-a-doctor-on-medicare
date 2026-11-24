@@ -26,17 +26,17 @@
   .draftbar{font-family:var(--ui);font-size:13px;font-weight:700;background:var(--draft);color:var(--draft-ink);padding:9px 120px 9px 24px;border-bottom:1px solid var(--line)}
   .progress{position:fixed;left:0;top:0;height:3px;width:0;background:var(--gold);z-index:60}
   .controls{position:absolute;top:4px;right:14px;z-index:60}
-  .controls button{font-family:var(--ui);font-size:12px;border:1px solid var(--line);background:var(--panel);color:var(--gray);border-radius:20px;padding:6px 12px;cursor:pointer}
+  .controls button{font-family:var(--ui);font-size:14px;border:1px solid var(--line);background:var(--panel);color:var(--gray);border-radius:20px;padding:6px 12px;cursor:pointer}
   a{color:var(--primary)}
   q{quotes:"\201C" "\201D" "\2018" "\2019"}
 
   header.hero{max-width:1180px;margin:0 auto;padding:56px 24px 26px}
-  .kicker{font-family:var(--ui);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);font-weight:700;margin:0 0 14px}
+  .kicker{font-family:var(--ui);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);font-weight:700;margin:0 0 14px}
   header.hero h1{font-size:41px;line-height:1.13;margin:0 0 18px;letter-spacing:-.01em;max-width:760px}
   header.hero .stand{font-size:21px;color:var(--gray);margin:0 0 14px;line-height:1.5;max-width:700px}
   nav.toc{max-width:1180px;margin:8px auto 0;padding:0 24px;font-family:var(--ui)}
   nav.toc ol{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0}
-  nav.toc a{display:inline-block;font-size:13px;text-decoration:none;color:var(--gray);border:1px solid var(--line);border-radius:20px;padding:6px 13px;background:var(--panel)}
+  nav.toc a{display:inline-block;font-size:14px;text-decoration:none;color:var(--gray);border:1px solid var(--line);border-radius:20px;padding:6px 13px;background:var(--panel)}
   nav.toc a[aria-current="true"]{color:#fff;background:var(--primary);border-color:var(--primary)}
   :root[data-theme="dark"] nav.toc a[aria-current="true"]{color:#10161c}
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) nav.toc a[aria-current="true"]{color:#10161c} }
@@ -45,20 +45,20 @@
     nav.railnav{display:block;position:fixed;left:calc((100vw - 1180px)/2 - 132px);top:50%;transform:translateY(-50%);width:120px;z-index:40;opacity:0;pointer-events:none;transition:opacity .35s ease;font-family:var(--ui)}
     nav.railnav.visible{opacity:1;pointer-events:auto}
     nav.railnav ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-    nav.railnav a{display:block;font-size:12px;line-height:1.25;color:var(--gray);text-decoration:none;border-left:2px solid var(--line);padding:1px 0 1px 12px;opacity:.6;transition:opacity .2s,color .2s,border-color .2s}
+    nav.railnav a{display:block;font-size:14px;line-height:1.25;color:var(--gray);text-decoration:none;border-left:2px solid var(--line);padding:1px 0 1px 12px;opacity:.6;transition:opacity .2s,color .2s,border-color .2s}
     nav.railnav a[aria-current="true"]{color:var(--ink);border-left-color:var(--primary);opacity:1;font-weight:600}
   }
 
   section.chapter{max-width:1180px;margin:0 auto;padding:20px 24px 0}
   .lead{max-width:1180px;margin:0 auto}
-  .ch-num{font-family:var(--ui);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:44px 0 10px}
+  .ch-num{font-family:var(--ui);font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:44px 0 10px}
   .lead h2{font-size:30px;line-height:1.15;margin:0 0 14px;letter-spacing:-.01em;max-width:700px}
   .lead p{margin:0 0 16px;max-width:700px}
   .arc{font-family:var(--ui);font-size:11.5px;color:var(--faint);white-space:nowrap}
   .nw{white-space:nowrap}
 
   /* the beat: narrative left, artifact right */
-  .beat{max-width:1180px;margin:0 auto;padding:7vh 24px;min-height:80vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:58px;align-items:center}
+  .beat{max-width:1180px;margin:0 auto;padding:32px 24px;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:58px;align-items:center}
   .beat .narr p{margin:0 0 14px}
   .beat .narr p:last-child{margin-bottom:0}
   .beat .art{position:sticky;top:16vh}
@@ -69,9 +69,9 @@
   .scrolly{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:58px;align-items:start}
   .scrolly .track{grid-column:1;grid-row:1}
   .scrolly .stage{grid-column:2;grid-row:1;position:sticky;top:13vh;height:74vh}
-  .scrolly .sstep{min-height:72vh;display:flex;flex-direction:column;justify-content:center}
-  .scrolly .sstep.dwell{min-height:100vh}
-  .scrolly .sstep:last-child{min-height:50vh}
+  .scrolly .sstep{min-height:38vh;display:flex;flex-direction:column;justify-content:center}
+  .scrolly .sstep.dwell{min-height:60vh}
+  .scrolly .sstep:last-child{min-height:30vh}
   .scrolly .sstep > p{margin:0 0 14px}.scrolly .sstep > p:last-child{margin-bottom:0}
   .scrolly .frame{position:relative;height:100%;display:flex;align-items:center}
   .scrolly .viz{position:absolute;left:0;right:0;top:50%;transform:translate(0,calc(-50% + 26px)) scale(.985);opacity:0;transition:opacity .55s ease,transform .55s cubic-bezier(.22,.61,.36,1);pointer-events:none}
@@ -93,21 +93,21 @@
   .pull{max-width:1180px;margin:34px auto;padding:0 24px}
   .pull blockquote{margin:0;font-size:27px;line-height:1.32;letter-spacing:-.01em;border-left:3px solid var(--gold);padding:4px 0 4px 22px;color:var(--ink);max-width:760px}
   .pull blockquote::before{content:"\201C"}.pull blockquote::after{content:"\201D"}
-  .pull cite{display:block;font-family:var(--ui);font-size:13.5px;font-style:normal;color:var(--faint);margin-top:12px;max-width:760px}
+  .pull cite{display:block;font-family:var(--ui);font-size:15px;font-style:normal;color:var(--faint);margin-top:12px;max-width:760px}
 
   /* cards on the right */
-  .card{font-family:var(--ui);border-radius:12px;padding:14px 16px;font-size:14px;line-height:1.5;border:1px solid var(--line);background:var(--panel)}
-  .card .lab{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:0 0 6px;color:var(--gold)}
+  .card{font-family:var(--ui);border-radius:12px;padding:16px 18px;font-size:16px;line-height:1.5;border:1px solid var(--line);background:var(--panel)}
+  .card .lab{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:0 0 6px;color:var(--gold)}
   .card.note{border-style:dashed;background:var(--rail)}.card.note .lab{color:var(--gray)}
-  .card .who{display:block;font-size:12px;color:var(--faint);margin-top:8px}
+  .card .who{display:block;font-size:14px;color:var(--faint);margin-top:8px}
   .card blockquote{margin:0;font-family:var(--serif);font-size:17px;line-height:1.4;color:var(--ink)}
   .card blockquote::before{content:"\201C"}.card blockquote::after{content:"\201D"}
   .card blockquote + blockquote{margin-top:10px}
 
   /* bar chart */
   .bars{font-family:var(--ui);border:1px solid var(--line);border-radius:12px;padding:15px 16px;background:var(--panel)}
-  .bars h3{margin:0 0 3px;font-size:14px}.bars .src{font-size:11.5px;color:var(--faint);margin:0 0 12px;line-height:1.45}
-  .bars .row{display:grid;grid-template-columns:132px 1fr 26px;align-items:center;gap:8px;margin:6px 0;font-size:12.5px}
+  .bars h3{margin:0 0 3px;font-size:16px}.bars .src{font-size:14px;color:var(--faint);margin:0 0 12px;line-height:1.45}
+  .bars .row{display:grid;grid-template-columns:170px 1fr 28px;align-items:center;gap:8px;margin:7px 0;font-size:14px}
   .bars .row .t{color:var(--ink);line-height:1.25}.bars .row .track{height:9px;background:var(--rail);border:1px solid var(--line);border-radius:5px;overflow:hidden}
   .bars .row .fill{display:block;height:100%;background:var(--primary);border-radius:5px}.bars .row .n{text-align:right;color:var(--gray);font-weight:700}
   .bars .row.hi .fill{background:var(--gold)}
@@ -122,14 +122,14 @@
   .paths{max-width:1180px;margin:10px auto 0;padding:0 24px}
   .paths h3{font-size:22px;margin:30px 0 6px;max-width:700px}
   .paths > p{max-width:700px;margin:0 0 16px}
-  .paths .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .paths .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(420px,100%),1fr));gap:14px}
   .paths .card p{margin:0 0 8px}
 
   /* a record from the directory, redrawn from the saved screen */
-  .mockwrap .cap{font-family:var(--ui);font-size:11.5px;color:var(--faint);margin-top:8px;line-height:1.45}
-  .mock{background:#fff;color:#1b1b1b;border:1px solid #dfe1e2;border-radius:10px;overflow:hidden;font-family:var(--ui);font-size:12.5px}
-  .mock .mbanner{background:#e7f2f8;color:#1b1b1b;padding:7px 12px;font-size:11px;line-height:1.4;border-bottom:1px solid #dfe1e2}
-  .mock .mhead{background:#162e51;color:#fff;padding:9px 12px;font-weight:700;font-size:12.5px}
+  .mockwrap .cap{font-family:var(--ui);font-size:14px;color:var(--faint);margin-top:8px;line-height:1.45}
+  .mock{background:#fff;color:#1b1b1b;border:1px solid #dfe1e2;border-radius:10px;overflow:hidden;font-family:var(--ui);font-size:14px}
+  .mock .mbanner{background:#e7f2f8;color:#1b1b1b;padding:7px 12px;font-size:14px;line-height:1.4;border-bottom:1px solid #dfe1e2}
+  .mock .mhead{background:#162e51;color:#fff;padding:9px 12px;font-weight:700;font-size:14px}
   .mock .mbody{padding:12px}
   .mock .mname{font-weight:700;font-size:14px;color:#1b1b1b}
   .mock .ours{color:#71767a;font-style:italic;font-weight:400}
@@ -137,7 +137,7 @@
   .mock dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
   .mock dt{color:#3d4551}.mock dd{margin:0;font-weight:700;color:#1b1b1b}
   .mock .msec{font-weight:700;margin:12px 0 4px;color:#162e51}
-  .mock .mfoot{border-top:1px solid #dfe1e2;padding:9px 12px;font-size:11px;color:#3d4551;background:#f7f7f7;line-height:1.45}
+  .mock .mfoot{border-top:1px solid #dfe1e2;padding:9px 12px;font-size:14px;color:#3d4551;background:#f7f7f7;line-height:1.45}
 
   /* how CMS describes the directory's place */
   .flow{font-family:var(--ui);font-size:12.5px;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:14px 16px}
@@ -152,7 +152,7 @@
   ol.tests li{counter-increment:t;border-top:1px solid var(--line);padding:16px 0 16px 44px;position:relative}
   ol.tests li::before{content:counter(t);position:absolute;left:0;top:16px;font-family:var(--ui);font-weight:700;font-size:13px;color:var(--gold);border:1px solid var(--gold);border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center}
   ol.tests .qq{font-weight:700;margin:0 0 6px}
-  ol.tests .with{font-family:var(--ui);font-size:13.5px;color:var(--gray);margin:0}
+  ol.tests .with{font-family:var(--ui);font-size:15px;color:var(--gray);margin:0}
 
   footer.ground{max-width:1180px;margin:40px auto 0;padding:22px 24px 80px;font-family:var(--ui);font-size:13.5px;color:var(--gray);border-top:1px solid var(--line);line-height:1.65}
   footer.ground p{max-width:700px;margin:0 0 10px}
@@ -169,7 +169,7 @@
     header.hero h1{font-size:28px}header.hero .stand{font-size:19px}
     .lead h2{font-size:25px}
     .pull blockquote{font-size:20px;padding-left:16px}
-    .bars .row{grid-template-columns:96px 1fr 22px;font-size:12px}
+    .bars .row{grid-template-columns:120px 1fr 24px;font-size:14px}
     .paths .grid{grid-template-columns:1fr}
     ol.tests li{padding-left:36px}
   }
@@ -205,6 +205,15 @@
   footer.sfoot{max-width:740px;margin:40px auto 64px;padding:0 24px;font-family:var(--ui);font-size:15px;line-height:1.6;color:var(--gray)}
   footer.sfoot a{color:var(--primary)}
   q.lit::before,q.lit::after{content:none}
+  /* 2026-11-24, Moe: "i see a lot of gaps" then "i cant tell the difference": on wide screens each step now sits
+     beside its own card, as on a phone, with no scroll space between steps (the script moves each card into its step). */
+  @media (min-width:901px){
+    html.js .scrolly{display:block}
+    html.js .scrolly .stage{display:none}
+    html.js .scrolly .sstep,html.js .scrolly .sstep.dwell,html.js .scrolly .sstep:last-child{min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);column-gap:58px;align-items:start;margin:0 0 28px}
+    html.js .scrolly .sstep > p{grid-column:1}
+    html.js .scrolly .sstep .viz,html.js .scrolly .sstep .viz.on{grid-column:2;grid-row:1 / span 6;position:static;transform:none;opacity:1;display:block;pointer-events:auto;margin:0;transition:none}
+  }
 </style>
 </head>
 <body>
@@ -302,7 +311,7 @@
 
 <div class="beat">
   <div class="narr">
-    <p>The Colorado man got a letter saying his endocrinologist would stop seeing him and other Medicare patients. When a woman in Washington, D.C., turned 65, her internist didn't take Medicare patients. It took her 18 months to find a new doctor. A forum poster believed their office was dropping them “<q class="lit">because they don't want to take my Medicare anymore</q>.” In Vancouver, Washington, a large clinic chain saw people on almost any Medicare Advantage plan. People on Original Medicare could see its specialists, but could not have a primary care doctor there. Someone replying in the comments gave a reason: such groups are in “<q class="lit">a financial risk-sharing arrangement with Medicare Advantage plans</q>.” In these four accounts, the person knew the doctor would not take them. None of them got a wrong answer.</p>
+    <p>The Colorado man got a letter saying his endocrinologist would stop seeing him and other Medicare patients. When a woman in Washington, D.C., turned 65, her internist didn't take Medicare patients. It took her 18 months to find a new doctor. A forum poster believed their office was dropping them “<q class="lit">because they don't want to take my Medicare anymore</q>.” In Vancouver, Washington, a large clinic chain saw people on almost any Medicare Advantage plan. People on Original Medicare could see its specialists, but could not have a primary care doctor there. Someone replying in the comments gave a reason: such groups are in “<q class="lit">a financial risk-sharing arrangement with Medicare Advantage plans</q>.” In these four accounts, the person knew the doctor would not take them, and had not been given a wrong answer.</p>
   </div>
 </div>
 
@@ -503,7 +512,7 @@
   });
   const narrow=matchMedia('(max-width:900px)');
   function place(){document.querySelectorAll('.scrolly').forEach(sec=>{const frame=sec.querySelector('.frame');
-    sec.querySelectorAll('.viz').forEach(v=>{const step=sec.querySelector('.sstep[data-i="'+v.dataset.i+'"]');const to=narrow.matches?step:frame;if(v.parentNode!==to)to.appendChild(v);});});}
+    sec.querySelectorAll('.viz').forEach(v=>{const step=sec.querySelector('.sstep[data-i="'+v.dataset.i+'"]');const to=step;if(v.parentNode!==to)to.appendChild(v);});});}
   place();narrow.addEventListener('change',place);
   document.querySelectorAll('figure.scene[data-img]').forEach(f=>{const ph=f.querySelector('.ph');const im=new Image();im.onload=()=>{im.alt=ph.getAttribute('aria-label');f.replaceChildren(im);};im.src=f.dataset.img;});
   const root=document.documentElement;document.getElementById('themeBtn').addEventListener('click',()=>{
